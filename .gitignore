@@ -1,0 +1,8 @@
+*core*
+.gdb_history
+flag.txt
+payload.bin
+*.id*
+*.nam
+*.til
+*.i64
