@@ -1,0 +1,2 @@
+[lint]
+ignore = ["F405"] # undefined-local-with-import-star-usage
