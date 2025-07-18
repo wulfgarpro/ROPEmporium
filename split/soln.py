@@ -4,7 +4,7 @@ context.terminal = ["wezterm", "start", "--"]
 context.log_level = "debug"
 
 p = process("./split")
-gdb.attach(p, api=True)
+# gdb.attach(p, api=True)
 e = ELF("./split")
 rop = ROP(e)
 

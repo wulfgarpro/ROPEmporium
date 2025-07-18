@@ -4,7 +4,7 @@ context.terminal = ["wezterm", "start", "--"]
 context.log_level = "debug"
 
 p = process("./ret2win")
-gdb.attach(p, api=True)
+# gdb.attach(p, api=True)
 e = ELF("./ret2win")
 rop = ROP(e)
 
