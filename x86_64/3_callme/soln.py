@@ -42,6 +42,8 @@ payload += p64(callme_three)
 
 p.sendafter(b"> ", payload)
 
-pause()
+# pause()
 
-p.recvall()
+p.recvline()
+p.recvline()
+p.recvline()

